@@ -24,4 +24,17 @@ services:
     restart: unless-stopped
 ```
 Путь можно посмотреть в web ui OVM или же ls /srv и выбрать нужный диск
-user/pass будут видны в логах в момент запуска
+user/pass будут видны в логах в момент запуска, посмотреть можно через веб интерфейс OVM, или через консоль 
+
+```
+docker ps
+docker logs id-qtbittorent-container
+```
+
+```
+******** Information ********
+To control qBittorrent, access the WebUI at: http://localhost:8080
+The WebUI administrator username is: admin
+The WebUI administrator password was not set. A temporary password is provided for this session: *********
+You should set your own password in program preferences.
+```
