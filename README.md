@@ -15,7 +15,7 @@ services:
       - TORRENTING_PORT=6881
       - UMASK=000
     volumes:
-      - /srv/dev-disk-by-uuid-..../downloads/config/qbittorent:/config
+      - /srv/dev-disk-by-uuid-..../downloads/config/:/config
       - /srv/dev-disk-by-uuid-..../downloads:/downloads
     ports:
       - 8080:8080
@@ -24,3 +24,4 @@ services:
     restart: unless-stopped
 ```
 Путь можно посмотреть в web ui OVM или же ls /srv и выбрать нужный диск
+user/pass будут видны в логах в момент запуска
